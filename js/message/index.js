@@ -1,0 +1,1 @@
+export { MessageKor } from './_ko';
