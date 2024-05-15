@@ -1,157 +1,27 @@
 ```
-s052
-├─ .gitignore
-├─ appspec.yml
-├─ config
-│  ├─ development.env
-│  └─ production.env
-├─ html
-│  ├─ favicon.ico
-│  └─ index.html
-├─ js
-│  ├─ api
-│  │  └─ index.js
-│  ├─ App.js
-│  ├─ components
-│  │  ├─ elements
-│  │  │  ├─ index.js
-│  │  │  ├─ PrivateRoutes.js
-│  │  │  ├─ PublicRoutes.js
-│  │  │  ├─ _Button.js
-│  │  │  ├─ _ButtonMedium.js
-│  │  │  ├─ _Checkbox.js
-│  │  │  ├─ _Input.js
-│  │  │  ├─ _InputRadio.js
-│  │  │  ├─ _LoginButton.js
-│  │  │  ├─ _LoginInput.js
-│  │  │  ├─ _ModalInputBtn.js
-│  │  │  ├─ _Radio.js
-│  │  │  ├─ _RadioGroup.js
-│  │  │  ├─ _SearchBtn.js
-│  │  │  ├─ _Selectbox.js
-│  │  │  ├─ _Spinner.js
-│  │  │  ├─ _TableInput.js
-│  │  │  ├─ _Textarea.js
-│  │  │  └─ _ToggleBtn.js
-│  │  ├─ layout
-│  │  │  ├─ index.js
-│  │  │  ├─ _Account.js
-│  │  │  ├─ _Header.js
-│  │  │  └─ _Navigation.js
-│  │  └─ pages
-│  │     ├─ index.js
-│  │     └─ _PostCodeModal.js
-│  ├─ hooks
-│  │  ├─ index.js
-│  │  ├─ _useInterval.js
-│  │  └─ _useModal.js
-│  ├─ index.js
-│  ├─ libs
-│  │  ├─ data
-│  │  │  ├─ index.js
-│  │  │  ├─ _dateformat.js
-│  │  │  ├─ _message.js
-│  │  │  └─ _response.js
-│  │  ├─ excel
-│  │  │  └─ uploadForm.xlsx
-│  │  ├─ img
-│  │  │  ├─ DownArrow.png
-│  │  │  ├─ DownArrow.svg
-│  │  │  ├─ eye.svg
-│  │  │  ├─ hidden.svg
-│  │  │  ├─ logo-color.png
-│  │  │  ├─ logo-w.png
-│  │  │  ├─ magnifierIcon.svg
-│  │  │  ├─ print-bg-logo.png
-│  │  │  ├─ printBgLogo2.png
-│  │  │  ├─ SearchIcon.png
-│  │  │  ├─ searchIcon.svg
-│  │  │  ├─ Shrug.png
-│  │  │  └─ Spinner.png
-│  │  └─ style
-│  │     ├─ index.js
-│  │     ├─ _GlobalStyles.js
-│  │     └─ _palette.js
-│  ├─ pages
-│  │  ├─ common
-│  │  │  ├─ Error.js
-│  │  │  ├─ id.config.js
-│  │  │  ├─ Loading.js
-│  │  │  ├─ numToCost.js
-│  │  │  ├─ SetDay.js
-│  │  │  ├─ Tooltip.js
-│  │  │  └─ Validation.js
-│  │  ├─ index.js
-│  │  ├─ main
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     └─ MainView.js
-│  │  ├─ S010100010
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     ├─ CancelPage.js
-│  │  │     ├─ SubleaseAgreement.js
-│  │  │     ├─ UseContract origin.js
-│  │  │     ├─ UseContract.js
-│  │  │     └─ UseContractPreview.js
-│  │  ├─ S010100040
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     ├─ ListView.js
-│  │  │     ├─ SearchView.js
-│  │  │     └─ Title.js
-│  │  ├─ S010100050
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     └─ MemberDetail.js
-│  │  ├─ S010100060
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     ├─ ListView.js
-│  │  │     ├─ SearchView.js
-│  │  │     └─ Title.js
-│  │  ├─ S010100070
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     └─ CustPaymentRegister.js
-│  │  ├─ S010100090
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     ├─ ListView.js
-│  │  │     ├─ SearchView.js
-│  │  │     └─ Title.js
-│  │  ├─ S010100100
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     ├─ ImageViewer.js
-│  │  │     └─ StaffRegister.js
-│  │  ├─ S010100130
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     ├─ ListView.js
-│  │  │     ├─ SearchView.js
-│  │  │     └─ Title.js
-│  │  ├─ S010100140
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     └─ ConsultRegister.js
-│  │  ├─ S010100150
-│  │  │  ├─ index.js
-│  │  │  └─ view
-│  │  │     └─ LoginView.js
-│  │  └─ Tempo
-│  │     ├─ index.js
-│  │     └─ view
-│  │        ├─ 3F.js
-│  │        ├─ 4F.js
-│  │        ├─ RoomMng.js
-│  │        ├─ Title.js
-│  │        └─ VirtualOffice.js
-│  └─ stores
-│     ├─ index.js
-│     └─ _authStore.js
-├─ package-lock.json
-├─ package.json
-├─ README.md
-└─ yarn.lock
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+프로젝트 명 : Energy_Monitoring_System
+프로젝트 개발인원 : 3명(DBA 1명, Publisher+Frontend Developer 1명, Frontend+Backend Developer 1명)
+프로젝트 개발기간 : 약 2개월
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+세부 프로젝트 명 : Energy_Monitoring_Front
+
+개발목적 :
+고객이 사용할 화면을 설계,
+DB서버에 저장된 데이터를 Back서버를 통해 호출하여 가져오고 실시간으로 화면에 업로드
+
+기술스택 : 
+Node.js: 프로그래밍 언어 및 런타임 환경
+npm: 라이브러리 관리 도구
+React: 프론트엔드 프레임워크
+Visual Studio Code: 통합 개발 환경(IDE)
+MariaDB: 데이터베이스
+
+목표달성 : o
+
+본인(Frontend+Backend Developer)기여내용 :
+모니터링 탭 공동개발을 제외한 나머지 화면 전체
+수정사항 및 변경사항 발생 시 화면기능 유지보수,
+배포(Express를 사용해 Node.js 기반 서버를 구축, 압축된 build파일 서빙을 적용)
 ```
